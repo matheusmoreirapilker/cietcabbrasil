@@ -1,0 +1,226 @@
+@charset "UTF-8 ";
+
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ 
+}
+header{
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #233ED9;
+    color: white;
+    margin-top: -22px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+header > a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header > h1{
+    padding-top: 30px;
+}
+
+nav{
+ padding-bottom: 25px;
+ padding-top: 25px;
+ box-shadow: 15px 5px 25px;
+ text-shadow: 7px 3px 10px gray;
+ min-width: 300px;
+text-align: center;
+
+}
+
+nav > a{
+    padding: 10px;
+    color: darkblue;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none
+}
+main{
+ text-align: center;
+ color: black;
+}
+
+main > h2{
+    text-align: center;
+    color: darkblue;
+}
+main > p{
+    font-size: 18px;
+}
+
+ aside{
+    text-align: center;
+    font-size: 15pt
+ }
+
+main > h1{
+    text-align: center;
+}
+
+.imagem{
+    display: flex; /*alinha os itens*/
+    justify-content: center; /**/
+    max-width: 800px; /*largura maxima*/
+    min-width: 200px; /*largura minima*/
+    flex-wrap: wrap; /*serve para quebrar os itens para a linha de baixo quando não cabe tudo na mesma linha. E o 'wrap' faz quebrar e ir pra proxima linha*/
+    gap: 20px; /* espaço entre os itens dentro de um flex*/
+    margin: auto; /* margem centrlizada*/
+    
+    
+}
+.linha{
+    text-align: center;
+    width: 200px;
+    padding-left: 15px;
+    color: #5F72D9  ;
+}
+.video{
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+}
+.video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+#resultado{
+    color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+}
+
+#erro{
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ #msg{
+    height: 100px;
+    width: 250px;
+ }
+ #nome{width: 250px;
+margin-bottom: 5px;}
+ #email{width: 250px;
+    margin-bottom: 5px;}
+ #assunto{width: 250px;
+    margin-bottom: 5px;}
+
+.ideia{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: darkblue;
+    font-size: 16pt;
+    padding-right: 15px;
+}
+.ideia > img{
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+.part2{
+    font-size: 20pt;
+}
+.internacional{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #233ED9;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 16pt;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.internacional > img{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 10px;
+}
+li{
+    margin-bottom: 25px;
+}
+h4{
+    margin-top: -20px;
+    background-color: #233ED9;
+    color: white;
+    text-align: center;
+}
+
+.ambiente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+    color: darkblue;
+}
+.ambiente > img{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 10px;
+}  
+
+.faleconosco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Limite opcional */
+    aspect-ratio: 3 / 2; /* Proporção 3:2 (ex: 600x400) */
+    margin: auto;
+  }
+  
+  .slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 9s infinite;
+  }
+  
+  .slideshow img:nth-child(1) { animation-delay: 0s; }
+  .slideshow img:nth-child(2) { animation-delay: 3s; }
+  .slideshow img:nth-child(3) { animation-delay: 6s; }
+  
+  @keyframes fade {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+
+
+footer{
+ background-color: black;
+ color: white;
+ text-align: center;
+
+}
